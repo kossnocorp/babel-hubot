@@ -7,7 +7,7 @@ Minimalistic Hubot wrapper that allows to write scripts using power of ES2015.
 Install:
 
 ``` shell
-npm install babel-hubot --save
+npm install babel-hubot babel --save
 ```
 
 Open local `bin/hubot` and replace regular `hubot` binary with `babel-hubot`
