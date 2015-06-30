@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+require('babel/register')
+require('coffee-script/register')
+
+var path = require('path')
+var fs = require('fs')
+var coffeeScript = require('coffee-script')
+
+var hubotBinPath = path.join(process.cwd(), 'node_modules', '.bin', 'hubot')
+
+fs.readFile(hubotBinPath, function(err, file) {
+  coffeeScript.run(file.toString(), { filename: hubotBinPath })
+})
+
