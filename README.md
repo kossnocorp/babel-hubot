@@ -4,10 +4,10 @@ Minimalistic Hubot wrapper that allows to write scripts using power of ES2015.
 
 ## Installation
 
-Install:
+Install (for Babel < 6, use `npm install babel-hubot#0.1 babel#5 --save`):
 
 ``` shell
-npm install babel-hubot babel --save
+npm install babel-hubot babel-core --save
 ```
 
 Open local `bin/hubot` and replace regular `hubot` binary with `babel-hubot`
@@ -27,4 +27,3 @@ wrapper:
 ## License
 
 ngrok-daemon is released under the [MIT License](./LICENSE.md).
-
