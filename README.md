@@ -1,19 +1,20 @@
-# babel-hubot [![npm version](https://badge.fury.io/js/babel-hubot.svg)](http://badge.fury.io/js/babel-hubot)
+# babel-hubot
+[![npm version](https://badge.fury.io/js/babel-hubot.svg)](http://badge.fury.io/js/babel-hubot)
 
-Minimalistic Hubot wrapper that allows to write scripts using power of ES2015.
+Minimalistic Hubot wrapper that allows to write scripts using power of ES 2015.
 
 ## Installation
 
 Install (for Babel < 6, use `npm install babel-hubot#0.1 babel#5 --save`):
 
-``` shell
-npm install babel-hubot babel-core --save
+```shell
+npm install babel-hubot babel-core coffee-script babel-preset-es2015 --save
 ```
 
 Open local `bin/hubot` and replace regular `hubot` binary with `babel-hubot`
 wrapper:
 
-``` diff
+```diff
 --- a/bin/hubot
 +++ b/bin/hubot
 @@ -3,4 +3,4 @@
@@ -24,6 +25,15 @@ wrapper:
 +exec node_modules/.bin/babel-hubot "$@"
 ```
 
+Then you might want to enable ES 2015, to do that, modify or create
+`.babelrc` file:
+
+```json
+{
+  "presets": ["es2015"]
+}
+```
+
 ## License
 
-ngrok-daemon is released under the [MIT License](./LICENSE.md).
+MIT

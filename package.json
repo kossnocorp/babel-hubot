@@ -1,7 +1,7 @@
 {
   "name": "babel-hubot",
   "version": "0.2.0",
-  "description": "Minimalistic Hubot wrapper that allows to write scripts using power of ES2015",
+  "description": "Minimalistic Hubot wrapper that allows to write scripts using power of ES 2015",
   "repository": "kossnocorp/babel-hubot",
   "main": "index.js",
   "bin": "bin/babel-hubot",
